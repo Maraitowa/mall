@@ -1,13 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
+    <main-tab-bar></main-tab-bar>
+    <icon></icon>
   </div>
 </template>
 
-<style scoped>
+<script>
+  import MainTabBar from 'components/content/MainTabBar'
+  import Icon from 'components/content/Icon/Icon.vue'
+  
+  export default {
+    name: 'App',
+    components: {
+      MainTabBar,
+      Icon
+    }
+  }
+</script>
 
+<style scoped>
+  @import "assets/css/base.css"
 </style>
