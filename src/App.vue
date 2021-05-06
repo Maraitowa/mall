@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import MainTabBar from 'components/content/MainTabBar'
+  import MainTabBar from 'components/content/mainTabBar/MainTabBar'
   import Icon from 'components/content/Icon/Icon.vue'
   
   export default {
